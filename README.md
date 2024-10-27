@@ -166,7 +166,9 @@ PCA Analysis insights:
 - Petrol cars display greater variation in both mileage and price, serving a wider market with more affordable options but lower overall performance in fuel efficiency.
 - The PCA confirms that mileage and price are key differentiators between these fuel types, with diesel cars standing out for their superior performance and pricing stability.les.
 
-
-
-
-
+## References
+1. Pandas Tutorial: https://pandas.pydata.org/getting_started.html
+2. Matplotlib: https://www.geeksforgeeks.org/matplotlib-tutorial/
+3. Seaborn Tut: https://www.datacamp.com/tutorial/seaborn-python-tutorial
+4. Exploratory Data Analysis: https://www.analyticsvidhya.com/blog/2022/07/step-by-step-exploratory-data-analysis-eda-using-python/
+5. Outlier Detection: https://www.geeksforgeeks.org/what-is-outlier-detection/
