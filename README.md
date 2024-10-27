@@ -33,12 +33,12 @@ The dataset comes from Kaggle's "CarDekho Used Car Data" dataset, containing 15,
 - Provide insights on efficiency and value differences between Petrol and Diesel cars.
 
 
-### EDA Hypotheses 
+## EDA Hypotheses 
 
 ## 1. What factors contribute to high mileage in used cars?
 - Reason for Interest: Mileage is a critical factor for buyers as it often reflects the car's usage and condition. Understanding what factors contribute to higher mileage (e.g., vehicle age, kilometers driven) can help identify which types of cars may be more likely to have higher mileage, providing valuable insights for buyers and sellers.
 
-Univariate Analysis Insights:
+### Univariate Analysis Insights:
 
 - Age of Vehicle: The distribution shows that the majority of cars are clustered between 5 to 10 years old. Older cars tend to have slightly more variance in mileage performance, but age alone doesn't show significant insights into high mileage.
 
@@ -52,7 +52,7 @@ Univariate Analysis Insights:
 
 - Transmission Type: Manual transmission cars are more frequent, and manual transmissions generally provide better mileage compared to automatic transmissions.
 
-Bivariate Analysis Insights:
+### Bivariate Analysis Insights:
 
 - Age of Vehicle vs Car Mileage: The scatterplot shows a weak negative correlation between age and mileage. Older cars generally have lower mileage, but the relationship isn't overly strong.
 
@@ -62,7 +62,7 @@ Bivariate Analysis Insights:
 
 - Engine Capacity vs Car Mileage: There is a strong negative correlation between engine capacity and mileage. Cars with smaller engines have higher mileage, while larger engines (above 1500cc) are associated with lower mileage.
 
-Multivariate Analysis Insights:
+### Multivariate Analysis Insights:
 
 - Correlation Matrix: The heatmap shows moderate negative correlations between engine_capacity and car_mileage, as well as age_of_vehicle and car_mileage. Kilometers_driven has a weaker negative correlation with mileage, suggesting that engine size and age are more critical factors in determining fuel efficiency.
 
@@ -83,7 +83,7 @@ From the analyses, it's clear that several factors contribute to high mileage in
 ## 2. How does the combination of vehicle characteristics affect the selling price of automatic vs. manual transmission cars?
 - Reason for Interest: Transmission type (automatic vs. manual) can significantly impact the selling price of a car. By analyzing the interactions between vehicle characteristics (e.g., engine size, vehicle age) for different transmission types, this question can reveal which features drive the value of each type, allowing for a deeper understanding of price differences and consumer preferences.
 
-Univariate Analysis Insights:
+### Univariate Analysis Insights:
 
 - Transmission Type Distribution: The pie chart reveals that manual transmission vehicles dominate the dataset, making up a larger percentage than automatic transmission vehicles. This could influence the distribution of selling prices.
 
@@ -96,7 +96,7 @@ Univariate Analysis Insights:
 - Car Mileage Distribution: The distribution of car mileage shows that many cars have mileage between 15 to 20 kmpl, typical for average-performance vehicles in this dataset.
 
 
-Bivariate Analysis Insights:
+### Bivariate Analysis Insights:
 
 - Selling Price by Transmission Type: Manual transmission cars generally have a lower price range compared to automatic transmission cars. This might reflect the higher cost and demand for automatic cars, especially for more recent models.
 
@@ -109,7 +109,7 @@ Engine Capacity vs Price:
 
 - Vehicles with larger engines tend to have higher prices, which is consistent with the idea that larger engine vehicles offer more power or features that justify the cost.
 
-Multivariate Analysis Insights:
+### Multivariate Analysis Insights:
 
 - Pair Plot of Car Mileage, Engine Capacity, and Price: The pair plot reveals that price tends to increase with engine capacity, while car mileage has a moderate negative relationship with price. Gearbox type doesn't strongly impact car mileage but does affect pricing—automatic vehicles generally have higher prices.
 
@@ -129,7 +129,7 @@ From the analyses, we can conclude that the combination of vehicle characteristi
 ## 3. How does fuel type (Petrol vs. Diesel) influence car performance in terms of mileage and price?
 - Reason for Interest: Fuel type is a major consideration for car buyers, especially when it comes to performance and cost. Investigating how petrol and diesel cars differ in terms of mileage and price can provide insights into which fuel types offer better efficiency and value, helping buyers make informed decisions based on their priorities.
 
-Univariate Analysis Insights:
+### Univariate Analysis Insights:
 
 - Fuel Type Distribution: The pie chart shows that petrol cars dominate the dataset, making up a larger portion compared to diesel cars. This difference in representation could impact the average mileage and price trends observed in the data.
 
@@ -137,19 +137,19 @@ Univariate Analysis Insights:
 
 - Price Distribution: The price distribution has a right skew, suggesting that more cars fall into the lower price range, with fewer cars in the higher price brackets. This could reflect the larger number of petrol cars, which tend to be more affordable compared to diesel cars.
 
-Bivariate Analysis Insights:
+### Bivariate Analysis Insights:
 
 - Car Mileage by Fuel Type: The box plot reveals a clear difference between fuel types. Diesel cars generally offer higher mileage compared to petrol cars, with less variance. Petrol cars have a wider range in mileage, but their median mileage is lower compared to diesel.
 
 - Price by Fuel Type: The violin plot shows that diesel cars tend to have higher prices, while petrol cars exhibit a wider price range. Diesel cars appear to have fewer outliers and a more concentrated distribution of higher prices. This likely reflects the increased fuel efficiency and durability of diesel engines.
 
 
-Multivariate Analysis Insights:
+### Multivariate Analysis Insights:
 - Pairplot: Fuel Type, Car Mileage, and Price: The pairplot shows clear separation between petrol and diesel cars when examining mileage and price together. Diesel cars tend to cluster at higher mileage and price points, while petrol cars are spread more evenly across lower price ranges with variable mileage performance.
 
 - FacetGrid: Price vs. Car Mileage by Fuel Type: The FacetGrid highlights that while diesel cars achieve higher mileage, they are also priced higher than petrol cars. Petrol cars show more variance in mileage, but generally cluster around lower prices and lower mileage performance. Diesel cars demonstrate a more linear relationship between higher mileage and higher price.
 
-Insights from PCA Analysis:
+### Insights from PCA Analysis:
 - Explained Variance: Principal Component 1 explains 81.63% of the variance, while Principal Component 2 explains 18.37%, meaning these two components capture almost all the information related to mileage and price.
 - Diesel Cars: Diesel cars (green) are closely clustered, indicating consistent mileage and pricing. They tend to offer better fuel efficiency and are priced higher with less variability compared to petrol cars.
 - Petrol Cars: Petrol cars (blue) are more widely spread, showing greater variability in both mileage and price. Petrol cars cater to a broader market, with a mix of lower-priced, lower-mileage vehicles and some higher-end models.
