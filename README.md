@@ -1,5 +1,4 @@
 # Exploratory-Data-Analysis-on-Car-Pricing-Determinants-and-Mileage-Efficiency
-## 1. Introduction
 
 # Dataset Description
 The dataset comes from Kaggle's "CarDekho Used Car Data" dataset, containing 15,411 observations. It includes various attributes about used cars, such as the brand, model, vehicle age, and the selling price. The dataset provides a rich set of variables that can be analyzed for insights related to used car pricing trends.
@@ -34,9 +33,9 @@ The dataset comes from Kaggle's "CarDekho Used Car Data" dataset, containing 15,
 - Provide insights on efficiency and value differences between Petrol and Diesel cars.
 
 
-### EDA Hypotheses (Ask you questions)
+### EDA Hypotheses 
 
-1. What factors contribute to high mileage in used cars?
+## 1. What factors contribute to high mileage in used cars?
 - Reason for Interest: Mileage is a critical factor for buyers as it often reflects the car's usage and condition. Understanding what factors contribute to higher mileage (e.g., vehicle age, kilometers driven) can help identify which types of cars may be more likely to have higher mileage, providing valuable insights for buyers and sellers.
 
 Univariate Analysis Insights:
@@ -81,7 +80,7 @@ From the analyses, it's clear that several factors contribute to high mileage in
 - Age of Vehicle: As cars get older, their mileage tends to decrease, although the relationship is not strong.
 - Transmission Type: Manual transmissions tend to provide better mileage than automatic transmissions.
 
-2. How does the combination of vehicle characteristics affect the selling price of automatic vs. manual transmission cars?
+## 2. How does the combination of vehicle characteristics affect the selling price of automatic vs. manual transmission cars?
 - Reason for Interest: Transmission type (automatic vs. manual) can significantly impact the selling price of a car. By analyzing the interactions between vehicle characteristics (e.g., engine size, vehicle age) for different transmission types, this question can reveal which features drive the value of each type, allowing for a deeper understanding of price differences and consumer preferences.
 
 Univariate Analysis Insights:
@@ -127,7 +126,7 @@ From the analyses, we can conclude that the combination of vehicle characteristi
 - Engine Capacity: Larger engines significantly increase the price of a vehicle, particularly for automatic transmission cars.
 - Car Mileage: Although mileage plays a role, it is less critical than engine capacity and transmission type in determining price.
 
-3. How does fuel type (Petrol vs. Diesel) influence car performance in terms of mileage and price?
+## 3. How does fuel type (Petrol vs. Diesel) influence car performance in terms of mileage and price?
 - Reason for Interest: Fuel type is a major consideration for car buyers, especially when it comes to performance and cost. Investigating how petrol and diesel cars differ in terms of mileage and price can provide insights into which fuel types offer better efficiency and value, helping buyers make informed decisions based on their priorities.
 
 Univariate Analysis Insights:
